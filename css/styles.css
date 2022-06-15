@@ -105,7 +105,7 @@ ul.header-link-list-1 li {
 .header-link:focus,
 .header-link:hover {
   color: var(--hover-color);
-  }
+}
 
 address {
   margin-left: auto;
@@ -126,7 +126,7 @@ address {
   font-size: 14px;
   line-height: 1.14;
   color: var(--brand-color);
-  transition-property: color fill;
+  transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -363,7 +363,6 @@ main .description {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .social-link-address {
   display: flex;
@@ -376,7 +375,6 @@ main .description {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .social-link-address:hover,
 .social-link-address:focus {
@@ -417,7 +415,6 @@ main .description {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .customers-link-address {
   display: flex;
@@ -430,7 +427,6 @@ main .description {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .customers-link-address:hover,
@@ -459,10 +455,9 @@ main .description {
   border-radius: 4px;
   margin-right: 4px;
   margin-left: 4px;
-  transition-property: background-color color;
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .button-item:hover {
   background-color: var(--button-item-color-hover);
@@ -481,7 +476,6 @@ main .description {
   border-radius: 4px;
   padding: 10px 41px 10px 42px;
   justify-content: center;
-
 }
 
 .button-item-list {
@@ -526,7 +520,6 @@ main .description {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .solutions-figure:hover .overlay {
@@ -552,6 +545,11 @@ main .description {
 
   padding-right: 45px;
   padding-left: 24px;
+  padding-top: 49px;
+}
+
+.overlay p {
+  margin: 0;
 }
 
 .solutions-figure:hover {
@@ -604,7 +602,6 @@ main .description {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .footer-text {
   font-style: normal;
@@ -676,6 +673,10 @@ address .footer-link {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
+
+  transition-property: opacity, hidden;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -698,15 +699,10 @@ address .footer-link {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-   
-  transition-property: opacity hidden;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
