@@ -87,6 +87,9 @@ ul.header-link-list-1 li {
   line-height: 1.14;
   color: var(--brand-color);
   position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .activepage::after {
@@ -102,9 +105,7 @@ ul.header-link-list-1 li {
 .header-link:focus,
 .header-link:hover {
   color: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
 address {
   margin-left: auto;
@@ -125,14 +126,15 @@ address {
   font-size: 14px;
   line-height: 1.14;
   color: var(--brand-color);
+  transition-property: color fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-contact:hover,
 .header-link-contact:focus {
   color: var(--hover-color);
   fill: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link-item {
@@ -358,6 +360,10 @@ main .description {
   fill: var(--icon-color);
   width: 20px;
   height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .social-link-address {
   display: flex;
@@ -367,19 +373,19 @@ main .description {
   height: 44px;
   border-radius: 50%;
   background-color: var(--background-icon-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .social-link-address:hover,
 .social-link-address:focus {
   background-color: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-address:hover .social-link-icon,
 .social-link-address:focus .social-link-icon {
   fill: #fff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*customers*/
@@ -408,6 +414,10 @@ main .description {
   fill: var(--icon-color);
   width: 106px;
   height: 60.4px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .customers-link-address {
   display: flex;
@@ -417,20 +427,20 @@ main .description {
   height: 92px;
   border: 1px solid #afb1b8;
   background-color: #fff;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .customers-link-address:hover,
 .customers-link-address:focus {
   border-color: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link-address:hover .customers-link-icon,
 .customers-link-address:focus .customers-link-icon {
   fill: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* button */
@@ -449,6 +459,10 @@ main .description {
   border-radius: 4px;
   margin-right: 4px;
   margin-left: 4px;
+  transition-property: background-color color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .button-item:hover {
   background-color: var(--button-item-color-hover);
@@ -456,8 +470,6 @@ main .description {
   box-shadow: 0px 2px 2px 0px #0000001f;
   box-shadow: 0px 1px 2px 0px #00000014;
   box-shadow: 0px 3px 1px 0px #0000001a;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button > .button-item {
   font-weight: 700;
@@ -469,6 +481,7 @@ main .description {
   border-radius: 4px;
   padding: 10px 41px 10px 42px;
   justify-content: center;
+
 }
 
 .button-item-list {
@@ -509,12 +522,15 @@ main .description {
 
   position: relative;
   overflow: hidden;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .solutions-figure:hover .overlay {
   transform: translateY(0);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay {
@@ -525,9 +541,9 @@ main .description {
   height: 100%;
   background-color: #2196f3e5;
   transform: translateY(100%);
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: transform;
 
   font-weight: 400;
   font-size: 18px;
@@ -541,8 +557,6 @@ main .description {
 .solutions-figure:hover {
   box-shadow: 0px 1px 1px 0px #0000001f, 1px 4px 6px 0px #00000029,
     0px 4px 4px 0px #0000000f;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .solutions-figcaption {
@@ -587,6 +601,10 @@ main .description {
   text-decoration: none;
   list-style-type: none;
   color: var(--footer-link);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .footer-text {
   font-style: normal;
@@ -599,9 +617,8 @@ main .description {
 .footer-link:focus,
 .footer-link:hover {
   color: var(--footer-link-color-hover);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-tel {
   margin-top: 9px;
 }
@@ -644,8 +661,6 @@ address .footer-link {
 .footer .social-link-address:hover,
 .footer .social-link-address:focus {
   background-color: var(--hover-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .social-link-list {
@@ -661,8 +676,6 @@ address .footer-link {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -685,12 +698,15 @@ address .footer-link {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+   
+  transition-property: opacity hidden;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
